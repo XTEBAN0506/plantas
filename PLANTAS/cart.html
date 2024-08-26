@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tu Carrito de Compras</h1>
+        <div class="cart-icon">
+            <span id="cart-count">0</span>
+            <img src="cart-icon.png" alt="Carrito de Compras">
+        </div>
+    </header>
+
+    <div id="cart-container">
+        <!-- Elementos del carrito generados dinámicamente -->
+    </div>
+
+    <div class="cart-summary">
+        <p>Total de artículos: <span id="total-items">0</span></p>
+        <p>Costo total: $<span id="total-cost">0.00</span></p>
+        <button id="checkout">Pagar (Próximamente)</button>
+        <button onclick="window.location.href='products.html'">Continuar comprando</button>
+    </div>
+    <script src="redux.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
